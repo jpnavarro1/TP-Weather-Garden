@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    background:green;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /*background: black;*/
+}
+
+.sky {
+    background: lightblue;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloud {
+    background-image: url(./material/cloud.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25%;
+    width: 15%;
+}
+
+.moon {
+    position: absolute;
+    background-image: url(./material/moon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25%;
+    width: 25%;
+    z-index: 1;
+    /*visibility: hidden;*/
+}
+
+.sun {
+    position: absolute;
+    background-image: url(./material/sun.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25%;
+    width: 25%;
+    right: 0px;
+    z-index: 1;
+}
+
+.garden {
+    position: absolute;
+    height: 125px;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.flower {
+    display: inline-flex;
+    background-image: url(./material/flower.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 11%;
+    margin-right: 15px;
+}
+
+.fl2 {
+    background-image: url(./material/flower2.png);
+}
+
+.fl3 {
+    background-image: url(./material/flower3.png);
+}
+
+.fl4 {
+    background-image: url(./material/flower4.png);
+}
+
+.landscape {
+    background-image: url(./material/foreat.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    width: 100%;
+    height: 60%;
+    background-color: green;
+    z-index: -1;
+    position: absolute;
+    top: 25%;
+}
